@@ -1,0 +1,1404 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AD Taxi &#38; Drop Taxi</title>
+    <link rel="icon" type="image/png" href="/img/title-image.webp" />
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <!-------------------------------- Navbar Start -------------------------------->
+
+    <nav class="absolute top-0 left-0 w-full z-50 px-4 sm:px-6 lg:px-8 mt-8">
+      <div
+        class="max-w-[1800px] mx-auto bg-blue-50/95 backdrop-blur-md rounded-[28px] px-5 sm:px-8 lg:px-10 py-5 shadow-lg"
+      >
+        <div class="flex items-center justify-between">
+          <!-- Logo -->
+
+          <a href="#" class="flex items-center group">
+            <img
+              src="/img/logo.webp"
+              alt="Logo"
+              class="h-15 w-auto object-contain transition-all duration-500 group-hover:scale-110 group-hover:rotate-6 group-hover:drop-shadow-[0_0_12px_rgba(43,157,144,0.6)]"
+            />
+          </a>
+
+          <!-- Desktop Menu -->
+
+          <ul
+            class="hidden lg:flex items-center gap-12 text-[15px] font-semibold tracking-[3px] uppercase"
+          >
+            <li>
+              <a
+                href="#"
+                class="text-[rgb(46,81,149)] hover:text-black transition duration-300"
+              >
+                Home
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="#services"
+                class="hover:text-[rgb(46,81,149)] transition duration-300"
+              >
+                Services
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="#traxxi-features"
+                class="hover:text-[rgb(46,81,149)] transition duration-300"
+              >
+                Ride Features
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="#cabtypes"
+                class="hover:text-[rgb(46,81,149)] transition duration-300"
+              >
+                Car Listing
+              </a>
+            </li>
+          </ul>
+
+          <!-- Desktop Button -->
+
+          <div class="hidden lg:block">
+            <a href="tel:+916385202400">
+              <button
+                class="bg-[rgb(46,81,149)] text-white uppercase tracking-[3px] text-sm font-semibold px-8 py-4 rounded-xl hover:scale-105 hover:bg-sky-600 transition-all duration-500 cursor-pointer"
+              >
+                Contact Us →
+              </button>
+            </a>
+          </div>
+
+          <!-- Mobile Menu Button -->
+
+          <button id="menu-btn" class="lg:hidden flex flex-col gap-1.5">
+            <span class="w-7 h-[3px] bg-black rounded-full"></span>
+            <span class="w-7 h-[3px] bg-black rounded-full"></span>
+            <span class="w-7 h-[3px] bg-black rounded-full"></span>
+          </button>
+        </div>
+
+        <!-- Mobile Menu -->
+
+        <div id="mobile-menu" class="hidden lg:hidden pt-6">
+          <ul
+            class="flex flex-col gap-5 text-sm font-semibold tracking-[3px] uppercase"
+          >
+            <li>
+              <a href="#" class="text-[rgb(46,81,149)]"> Home </a>
+            </li>
+
+            <li>
+              <a
+                href="#services"
+                class="hover:text-[rgb(46,81,149)] transition duration-300"
+              >
+                Services
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="#cabtypes"
+                class="hover:text-[rgb(46,81,149)] transition duration-300"
+              >
+                Car Listing
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="#traxxi-features"
+                class="hover:text-[rgb(46,81,149)] transition duration-300"
+              >
+                Ride Features
+              </a>
+            </li>
+          </ul>
+
+          <!-- Mobile Button -->
+
+          <a href="tel:+916385202400">
+            <button
+              class="mt-6 w-full bg-[rgb(46,81,149)] text-white uppercase tracking-[3px] text-sm font-semibold px-8 py-4 rounded-xl hover:bg-black transition-all duration-500 cursor-pointer"
+            >
+              Contact Us →
+            </button>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-------------------------------- Navbar End -------------------------------->
+
+    <!-------------------------------- Home Section Start -------------------------------->
+
+    <section
+      class="relative bg-white overflow-hidden min-h-screen flex sm:items-center"
+    >
+      <!-- Background Car Image -->
+
+      <img
+        src="/img/bg.webp"
+        alt="Taxi Car"
+        class="absolute right-[-120px] bottom-[-20px] md:bottom-[-40px] lg:bottom-0 lg:right-[-120px] xl:right-[-80px] 2xl:right-0 w-[95%] sm:w-[80%] md:w-[70%] lg:w-[850px] object-contain opacity-100 pointer-events-none"
+      />
+
+      <!-- Content Container -->
+
+      <div
+        class="relative z-10 max-w-[1700px] mx-auto w-full px-[40px] pt-40 pb-20"
+      >
+        <!-- Wider Content Width -->
+
+        <div class="max-w-4xl">
+          <!-- Location text -->
+
+          <p
+            class="mb-6 uppercase text-[rgb(46,81,149)] text-xs sm:text-sm tracking-widest"
+          >
+            Taxi Service · All Over Tamil Nadu
+          </p>
+
+          <!-- Heading -->
+
+          <h1
+            class="text-4xl sm:text-5xl lg:text-7xl font-semibold font-['Cinzel'] leading-tight flex flex-wrap lg:flex-nowrap items-center gap-3"
+          >
+            <span> AD Taxi &#38; Drop Taxi </span>
+
+            <img
+              src="/img/car-logo.png"
+              alt="logo"
+              class="hidden sm:block h-10 sm:h-14 lg:h-16 w-auto object-contain hover:scale-110 transition duration-500 hover:animate-ping"
+            />
+          </h1>
+
+          <!-- Description -->
+
+          <p
+            class="text-sm sm:text-base lg:text-lg font-[Poppins] text-gray-500 mt-6 mb-8 leading-relaxed max-w-2xl"
+          >
+            Our taxi service delivers safe, fast, and comfortable rides anytime
+            you need. Professional drivers, clean vehicles, affordable fares,
+            and quick bookings make every journey smooth, reliable, and
+            stress-free from pickup to destination.
+          </p>
+
+          <!-- Buttons -->
+
+          <div class="flex flex-wrap gap-4 mt-18 sm:mt-23">
+            <!-- Book Now -->
+
+            <a href="https://book.adtaxiandtravels.com/">
+              <button
+                class="bg-[rgb(46,81,149)] text-white font-semibold py-3 px-6 rounded-xl border-2 border-[rgb(46,81,149)] hover:bg-white hover:text-[rgb(46,81,149)] transition-all duration-500 hover:scale-105 cursor-pointer animate-bounce sm:block"
+              >
+                Book Now &#8594;
+              </button>
+            </a>
+
+            <!-- Contact Us -->
+
+            <a href="tel:+916385202400">
+              <button
+                class="text-[rgb(46,81,149)] bg-white border-2 border-[rgb(46,81,149)] font-semibold py-3 px-6 rounded-xl hover:bg-[rgb(46,81,149)] hover:text-white transition-all duration-500 hover:scale-105 cursor-pointer sm:block"
+              >
+                Contact Us
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-------------------------------- Home Section End -------------------------------->
+
+    <!-------------------------------- Why us Section Start -------------------------------->
+
+    <section class="py-20 px-4" id="whyus">
+      <p class="mb-12 text-center text-5xl font-semibold font-[Roboto]">
+        Why Us
+      </p>
+
+      <div
+        class="max-w-[1400px] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
+      >
+        <!-- CARD 1 -->
+
+        <div
+          class="relative bg-white p-7 rounded-3xl shadow-md border border-gray-100 text-center transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:border-[rgb(46,81,149)] cursor-pointer"
+        >
+          <div
+            class="w-14 h-14 flex items-center justify-center mx-auto mb-5 rounded-2xl bg-gradient-to-br from-blue-50 to-indigo-100"
+          >
+            <img src="/img/icons/whyus-1.png" alt="" class="w-6" />
+          </div>
+
+          <p class="text-2xl font-semibold font-[Noto Sans] mb-3 text-gray-800">
+            24/7 Booking
+          </p>
+
+          <p class="text-sm text-gray-600 leading-relaxed">
+            Our taxi service is available anytime with quick responses, reliable
+            pickups, and smooth journeys.
+          </p>
+        </div>
+
+        <!-- CARD 2 -->
+
+        <div
+          class="relative bg-white p-7 rounded-3xl shadow-md border border-gray-100 text-center transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:border-[rgb(46,81,149)] cursor-pointer"
+        >
+          <div
+            class="w-14 h-14 flex items-center justify-center mx-auto mb-5 rounded-2xl bg-gradient-to-br from-blue-50 to-indigo-100"
+          >
+            <img src="/img/icons/whyus-2.png" alt="" class="w-6" />
+          </div>
+
+          <p class="text-2xl font-semibold font-[Noto Sans] mb-3 text-gray-800">
+            Verified Drivers
+          </p>
+
+          <p class="text-sm text-gray-600 leading-relaxed">
+            Experienced drivers ensure safe, stress-free, and comfortable rides
+            across every destination.
+          </p>
+        </div>
+
+        <!-- CARD 3 -->
+
+        <div
+          class="relative bg-white p-7 rounded-3xl shadow-md border border-gray-100 text-center transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:border-[rgb(46,81,149)] cursor-pointer"
+        >
+          <div
+            class="w-14 h-14 flex items-center justify-center mx-auto mb-5 rounded-2xl bg-gradient-to-br from-blue-50 to-indigo-100"
+          >
+            <img src="/img/icons/whyus-3.png" alt="" class="w-6" />
+          </div>
+
+          <p class="text-2xl font-semibold font-[Noto Sans] mb-3 text-gray-800">
+            Clean Vehicles
+          </p>
+
+          <p class="text-sm text-gray-600 leading-relaxed">
+            Hygienic and well-maintained taxis provide fresh, comfortable, and
+            pleasant travel experiences.
+          </p>
+        </div>
+
+        <!-- CARD 4 -->
+
+        <div
+          class="relative bg-white p-7 rounded-3xl shadow-md border border-gray-100 text-center transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:border-[rgb(46,81,149)] cursor-pointer"
+        >
+          <div
+            class="w-14 h-14 flex items-center justify-center mx-auto mb-5 rounded-2xl bg-gradient-to-br from-blue-50 to-indigo-100"
+          >
+            <img src="/img/icons/whyus-4.png" alt="" class="w-6" />
+          </div>
+
+          <p class="text-2xl font-semibold font-[Noto Sans] mb-3 text-gray-800">
+            Tamil Nadu Experts
+          </p>
+
+          <p class="text-sm text-gray-600 leading-relaxed">
+            We know the best routes, timings, and highways for smooth travel
+            experiences.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-------------------------------- Why us Section End -------------------------------->
+
+    <!-------------------------------- Services Section Start -------------------------------->
+    <section id="services">
+      <div class="py-10 px-4">
+        <p class="mb-10 text-center text-5xl fo font-semibold font-[Poppins]">
+          Services
+        </p>
+        <div
+          class="max-w-6xl mx-auto grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-6"
+        >
+          <!-- ===== TOP 3 CARDS ===== -->
+
+          <div class="group lg:col-span-2 cursor-pointer">
+            <div
+              class="bg-white/80 backdrop-blur-xl p-7 rounded-3xl shadow-md text-center transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:scale-[1.03]"
+            >
+              <div
+                class="text-3xl mb-4 transition-transform duration-500 group-hover:rotate-12 group-hover:scale-110"
+              >
+                <img
+                  src="/img/icons/services-1.svg"
+                  alt=""
+                  class="w-10 mx-auto"
+                />
+              </div>
+              <p
+                class="text-2xl font-semibold font-[Noto Sans] mb-3 tracking-wide text-gray-800"
+              >
+                Round Trips
+              </p>
+              <p class="text-gray-600 text-sm leading-relaxed">
+                From pickup to return, perfectly suited for all day trips,
+                weddings, and memorable family events.
+              </p>
+            </div>
+          </div>
+
+          <div class="group lg:col-span-2 cursor-pointer">
+            <div
+              class="bg-white/80 backdrop-blur-xl p-7 rounded-3xl shadow-md text-center transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:scale-[1.03]"
+            >
+              <div
+                class="text-3xl mb-4 transition-transform duration-500 group-hover:rotate-12 group-hover:scale-110"
+              >
+                <img
+                  src="/img/icons/services-2.svg"
+                  alt=""
+                  class="w-10 mx-auto"
+                />
+              </div>
+              <p
+                class="text-2xl font-semibold font-[Noto Sans] mb-3 tracking-wide text-gray-800"
+              >
+                One Way Drop
+              </p>
+              <p class="text-gray-600 text-sm leading-relaxed">
+                One direct ride to your destination airport, station, or any
+                city, smooth and reliable.
+              </p>
+            </div>
+          </div>
+
+          <div class="group lg:col-span-2 cursor-pointer">
+            <div
+              class="bg-white/80 backdrop-blur-xl p-7 rounded-3xl shadow-md text-center transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:scale-[1.03]"
+            >
+              <div
+                class="text-3xl mb-4 transition-transform duration-500 group-hover:rotate-12 group-hover:scale-110"
+              >
+                <img
+                  src="/img/icons/services-3.svg"
+                  alt=""
+                  class="w-10 mx-auto"
+                />
+              </div>
+              <p
+                class="text-2xl font-semibold font-[Noto Sans] mb-3 tracking-wide text-gray-800"
+              >
+                Outstation Package
+              </p>
+              <p class="text-gray-600 text-sm leading-relaxed">
+                Flexible multi-day journeys across South India, tailored to your
+                itinerary with seamless stops.
+              </p>
+            </div>
+          </div>
+
+          <!-- ===== BOTTOM 2 CARDS ===== -->
+
+          <div class="group lg:col-span-2 lg:col-start-2 cursor-pointer">
+            <div
+              class="bg-white/80 backdrop-blur-xl p-7 rounded-3xl shadow-md text-center transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:scale-[1.03]"
+            >
+              <div
+                class="text-3xl mb-4 transition-transform duration-500 group-hover:rotate-12 group-hover:scale-110"
+              >
+                <img
+                  src="/img/icons/services-4.svg"
+                  alt=""
+                  class="w-10 mx-auto"
+                />
+              </div>
+              <p
+                class="text-2xl font-semibold font-[Noto Sans] mb-3 tracking-wide text-gray-800"
+              >
+                Package
+              </p>
+              <p class="text-gray-600 text-sm leading-relaxed">
+                Flexible hourly packages for errands, meetings, and stops pay
+                only for time used.
+              </p>
+            </div>
+          </div>
+
+          <div class="group lg:col-span-2 cursor-pointer">
+            <div
+              class="bg-white/80 backdrop-blur-xl p-7 rounded-3xl shadow-md text-center transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:scale-[1.03]"
+            >
+              <div
+                class="text-3xl mb-4 transition-transform duration-500 group-hover:rotate-12 group-hover:scale-110"
+              >
+                <img
+                  src="/img/icons/services-5.svg"
+                  alt=""
+                  class="w-10 mx-auto"
+                />
+              </div>
+              <p
+                class="text-2xl font-semibold font-[Noto Sans] mb-3 tracking-wide text-gray-800"
+              >
+                Car Rental
+              </p>
+              <p class="text-gray-600 text-sm leading-relaxed">
+                Reliable taxi with single pickup and drop wherever your journey
+                comfortably ends.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!------------------------------------------ Services Section End ------------------------------------------>
+
+    <!------------------------------------------ Cars Section Start ------------------------------------------>
+
+    <section class="max-w-7xl mx-auto px-4 py-10" id="cabtypes">
+      <p
+        class="mt-5 mb-15 text-center text-5xl fo font-semibold font-[Poppins]"
+      >
+        Cab Types for Every Travellers
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+        <!-- CARD 1 -->
+
+        <div
+          class="-auto bg-[#efefef] rounded-[30px] overflow-hidden border border-gray-200 shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500"
+        >
+          <div class="relative overflow-hidden">
+            <div
+              id="slider1"
+              class="flex transition-transform duration-500 ease-in-out"
+            >
+              <img
+                src="/img/Cars/Hatchback/Tata Bolt.jpg"
+                class="w-full h-[260px] object-cover flex-shrink-0"
+              />
+
+              <img
+                src="/img/Cars/Hatchback/maruri suzuki Alto.jpg"
+                class="w-full h-[260px] object-cover flex-shrink-0"
+              />
+
+              <img
+                src="/img/Cars/Hatchback/Maruti Suzuki Baleno.jpg"
+                class="w-full h-[260px] object-cover flex-shrink-0"
+              />
+
+              <img
+                src="/img/Cars/Hatchback/Maruti Suzuki Celerio.jpg"
+                class="w-full h-[260px] object-cover flex-shrink-0"
+              />
+
+              <img
+                src="/img/Cars/Hatchback/Toyota Glanza.jpg"
+                class="w-full h-[260px] object-cover flex-shrink-0"
+              />
+
+              <img
+                src="/img/Cars/Hatchback/Tata Indica.jpg"
+                class="w-full h-[260px] object-cover flex-shrink-0"
+              />
+
+              <img
+                src="/img/Cars/Hatchback/Maruti Suzuki Wagonr.jpg"
+                class="w-full h-[260px] object-cover flex-shrink-0"
+              />
+            </div>
+
+            <button
+              onclick="prevSlide('slider1')"
+              class="absolute left-4 top-1/2 -translate-y-1/2 bg-white text-black w-10 h-10 rounded-lg shadow-lg hover:bg-[rgb(46,81,149)] hover:text-white transition cursor-pointer"
+            >
+              ❮
+            </button>
+
+            <button
+              onclick="nextSlide('slider1')"
+              class="absolute right-4 top-1/2 -translate-y-1/2 bg-white text-black w-10 h-10 rounded-lg shadow-lg hover:bg-[rgb(46,81,149)] hover:text-white transition cursor-pointer"
+            >
+              ❯
+            </button>
+
+            <div
+              class="absolute top-4 left-4 bg-white/90 px-3 py-1 rounded-full text-sm font-semibold flex items-center gap-2"
+            >
+              <img
+                src="/img/icons/car-user.svg"
+                alt=""
+                class="w-4 h-4 object-contain"
+              />
+              <span>4+1</span>
+            </div>
+          </div>
+
+          <div class="p-8">
+            <h2
+              class="text-4xl font-medium font-[Noto Sans] mb-4 text-gray-700"
+            >
+              Hatchback
+            </h2>
+
+            <p class="text-gray-500 text-lg font-[Roboto] leading-relaxed mb-8">
+              Comfortable hatchback cars offer smooth city rides, fuel
+              efficiency, and affordable daily travel.
+            </p>
+
+            <a href="https://book.adtaxiandtravels.com/">
+              <button
+                class="relative overflow-hidden bg-[rgb(46,81,149)] text-white px-5 py-3 rounded-2xl font-semibold text-lg group cursor-pointer"
+              >
+                <span
+                  class="absolute left-0 top-0 w-0 h-full bg-sky-600 transition-all duration-500 group-hover:w-full"
+                ></span>
+
+                <span class="relative z-10">Book Now &#8594;</span>
+              </button>
+            </a>
+          </div>
+        </div>
+
+        <!-- CARD 2 -->
+
+        <div
+          class="-auto bg-[#efefef] rounded-[30px] overflow-hidden border border-gray-200 shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500"
+        >
+          <div class="relative overflow-hidden">
+            <div
+              id="slider2"
+              class="flex transition-transform duration-500 ease-in-out"
+            >
+              <img
+                src="/img/Cars/Sedan/Hyundai Aura.jpg"
+                class="w-full h-[260px] object-cover flex-shrink-0"
+              />
+
+              <img
+                src="/img/Cars/Sedan/Honda Amaze.jpg"
+                class="w-full h-[260px] object-cover flex-shrink-0"
+              />
+
+              <img
+                src="/img/Cars/Sedan/Toyata Eitos.jpg"
+                class="w-full h-[260px] object-cover flex-shrink-0"
+              />
+
+              <img
+                src="/img/Cars/Sedan/Maruti Suzuki Ciaz.jpg"
+                class="w-full h-[260px] object-cover flex-shrink-0"
+              />
+
+              <img
+                src="/img/Cars/Sedan/Maruti Suzuki Swift Dzire.jpg"
+                class="w-full h-[260px] object-cover flex-shrink-0"
+              />
+
+              <img
+                src="/img/Cars/Sedan/Tata Indigo.jpg"
+                class="w-full h-[260px] object-cover flex-shrink-0"
+              />
+
+              <img
+                src="/img/Cars/Sedan/Hyundai Xcent.jpg"
+                class="w-full h-[260px] object-cover flex-shrink-0"
+              />
+
+              <img
+                src="/img/Cars/Sedan/Tata Zest.jpg"
+                class="w-full h-[260px] object-cover flex-shrink-0"
+              />
+            </div>
+
+            <button
+              onclick="prevSlide('slider2')"
+              class="absolute left-4 top-1/2 -translate-y-1/2 bg-white text-black w-10 h-10 rounded-lg shadow-lg hover:bg-[rgb(46,81,149)] hover:text-white transition cursor-pointer"
+            >
+              ❮
+            </button>
+
+            <button
+              onclick="nextSlide('slider2')"
+              class="absolute right-4 top-1/2 -translate-y-1/2 bg-white text-black w-10 h-10 rounded-lg shadow-lg hover:bg-[rgb(46,81,149)] hover:text-white transition cursor-pointer"
+            >
+              ❯
+            </button>
+
+            <div
+              class="absolute top-4 left-4 bg-white/90 px-3 py-1 rounded-full text-sm font-semibold flex items-center gap-2"
+            >
+              <img
+                src="/img/icons/car-user.svg"
+                alt=""
+                class="w-4 h-4 object-contain"
+              />
+              <span>4+1</span>
+            </div>
+          </div>
+
+          <div class="p-8">
+            <h2 class="text-4xl font-medium font-[Roboto] mb-4 text-gray-700">
+              Sedan
+            </h2>
+
+            <p class="text-gray-500 text-lg font-[Roboto] leading-relaxed mb-8">
+              Travel comfortably in the city with premium sedans and mini
+              vehicles anytime without extra charges.
+            </p>
+            <a href="https://book.adtaxiandtravels.com/">
+              <button
+                class="relative overflow-hidden bg-[rgb(46,81,149)] text-white px-5 py-3 rounded-2xl font-semibold text-lg group cursor-pointer"
+              >
+                <span
+                  class="absolute left-0 top-0 w-0 h-full bg-sky-600 transition-all duration-500 group-hover:w-full"
+                ></span>
+
+                <span class="relative z-10">Book Now &#8594;</span>
+              </button>
+            </a>
+          </div>
+        </div>
+
+        <!-- CARD 3 -->
+
+        <div
+          class="-auto bg-[#efefef] rounded-[30px] overflow-hidden border border-gray-200 shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500"
+        >
+          <div class="relative overflow-hidden">
+            <div
+              id="slider3"
+              class="flex transition-transform duration-500 ease-in-out"
+            >
+              <img
+                src="/img/Cars/SUV/Toyota Crysta.jpg"
+                class="w-full h-[260px] object-cover flex-shrink-0"
+              />
+
+              <img
+                src="/img/Cars/SUV/Maruti Suzuki Ertiga.jpg"
+                class="w-full h-[260px] object-cover flex-shrink-0"
+              />
+
+              <img
+                src="/img/Cars/SUV/Mahindra Marazzo.jpg"
+                class="w-full h-[260px] object-cover flex-shrink-0"
+              />
+
+              <img
+                src="/img/Cars/SUV/Mahindra Xylo.jpg"
+                class="w-full h-[260px] object-cover flex-shrink-0"
+              />
+            </div>
+
+            <button
+              onclick="prevSlide('slider3')"
+              class="absolute left-4 top-1/2 -translate-y-1/2 bg-white text-black w-10 h-10 rounded-lg shadow-lg hover:bg-[rgb(46,81,149)] hover:text-white transition cursor-pointer"
+            >
+              ❮
+            </button>
+
+            <button
+              onclick="nextSlide('slider3')"
+              class="absolute right-4 top-1/2 -translate-y-1/2 bg-white text-black w-10 h-10 rounded-lg shadow-lg hover:bg-[rgb(46,81,149)] hover:text-white transition cursor-pointer"
+            >
+              ❯
+            </button>
+
+            <div
+              class="absolute top-4 left-4 bg-white/90 px-3 py-1 rounded-full text-sm font-semibold flex items-center gap-2"
+            >
+              <img
+                src="/img/icons/car-user.svg"
+                alt=""
+                class="w-4 h-4 object-contain"
+              />
+              <span>4+1</span>
+            </div>
+          </div>
+
+          <div class="p-8">
+            <h2 class="text-4xl font-medium font-[Roboto] mb-4 text-gray-700">
+              SUV
+            </h2>
+
+            <p class="text-gray-500 text-lg font-[Roboto] leading-relaxed mb-8">
+              Stylish SUV cars deliver powerful performance, spacious comfort,
+              safety, and smooth driving journeys.
+            </p>
+            <a href="https://book.adtaxiandtravels.com/">
+              <button
+                class="relative overflow-hidden bg-[rgb(46,81,149)] text-white px-5 py-3 rounded-2xl font-semibold text-lg group cursor-pointer"
+              >
+                <span
+                  class="absolute left-0 top-0 w-0 h-full bg-sky-600 transition-all duration-500 group-hover:w-full"
+                ></span>
+
+                <span class="relative z-10">Book Now &#8594;</span>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!------------------------------------------ Cars Section End ------------------------------------------>
+
+    <!------------------------------------------ Taxxi-Features Section Start ------------------------------------------>
+
+    <section
+      class="w-full py-24 px-6 md:px-14 lg:px-24 overflow-hidden"
+      id="traxxi-features"
+    >
+      <!-- GRID -->
+      <!-- TOP CONTENT -->
+      <p class="mb-15 text-center text-5xl fo font-semibold font-[Poppins]">
+        Every Ride Features
+      </p>
+
+      <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
+        <!-- BIG CARD -->
+        <div
+          class="lg:col-span-2 lg:row-span-2 rounded-[30px] overflow-hidden relative p-8 border border-gray-200 bg-white shadow-xl group hover:-translate-y-2 duration-500"
+        >
+          <!-- Gradient Glow -->
+          <div
+            class="absolute -top-20 -right-20 w-72 h-72 rounded-full blur-3xl opacity-20"
+            style="background: rgb(46, 81, 149)"
+          ></div>
+
+          <div class="relative z-10">
+            <!-- Icon -->
+            <div
+              class="w-16 h-16 rounded-2xl flex items-center justify-center text-3xl mb-8 text-white"
+              style="background: rgb(46, 81, 149)"
+            >
+              <img src="/img/icons/trakxi-1.svg" alt="" class="w-8 mx-auto" />
+            </div>
+
+            <p
+              class="uppercase text-xs tracking-[4px] mb-4 font-semibold"
+              style="color: rgb(46, 81, 149)"
+            >
+              Live Tracking
+            </p>
+
+            <h2 class="text-3xl md:text-5xl font-bold leading-tight mb-6">
+              Track your cab from pickup to drop.
+            </h2>
+
+            <p class="text-gray-500 leading-8 text-lg mb-10">
+              Watch your driver move in real-time, receive trip updates
+              instantly, and share the route with family.
+            </p>
+
+            <!-- Bottom Status -->
+            <div
+              class="bg-gray-50 border border-gray-200 rounded-2xl p-5 flex flex-col md:flex-row md:items-center md:justify-between gap-4"
+            >
+              <div>
+                <p
+                  class="text-sm mb-1 font-medium"
+                  style="color: rgb(46, 81, 149)"
+                >
+                  DRIVER STATUS
+                </p>
+
+                <h4 class="text-lg font-semibold">
+                  Driver 3.5 km away • ETA 6 min
+                </h4>
+              </div>
+
+              <div
+                class="h-2 w-full md:w-40 rounded-full bg-gray-200 overflow-hidden"
+              >
+                <div
+                  class="h-full w-2/3 rounded-full animate-pulse"
+                  style="background: rgb(46, 81, 149)"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD -->
+        <div
+          class="rounded-[30px] bg-white border border-gray-200 p-7 shadow-lg hover:-translate-y-2 hover:shadow-2xl duration-300"
+        >
+          <div
+            class="w-14 h-14 rounded-2xl flex items-center justify-center text-2xl mb-6 text-white"
+            style="background: rgb(46, 81, 149)"
+          >
+            <img src="/img/icons/trakxi-2.svg" alt="" class="w-6 mx-auto" />
+          </div>
+
+          <h3 class="text-2xl font-semibold mb-4">Fare Estimation</h3>
+
+          <p class="text-gray-500 leading-7">
+            Get accurate pricing before booking your ride with zero hidden
+            charges.
+          </p>
+        </div>
+
+        <!-- CARD -->
+        <div
+          class="rounded-[30px] bg-white border border-gray-200 p-7 shadow-lg hover:-translate-y-2 hover:shadow-2xl duration-300"
+        >
+          <div
+            class="w-14 h-14 rounded-2xl flex items-center justify-center text-2xl mb-6 text-white"
+            style="background: rgb(46, 81, 149)"
+          >
+            <img src="/img/icons/trakxi-3.svg" alt="" class="w-6 mx-auto" />
+          </div>
+
+          <h3 class="text-2xl font-semibold mb-4">Driver Details</h3>
+
+          <p class="text-gray-500 leading-7">
+            See vehicle number, driver photo, and contact details instantly.
+          </p>
+        </div>
+
+        <!-- CARD -->
+        <div
+          class="rounded-[30px] bg-white border border-gray-200 p-7 shadow-lg hover:-translate-y-2 hover:shadow-2xl duration-300"
+        >
+          <div
+            class="w-14 h-14 rounded-2xl flex items-center justify-center text-2xl mb-6 text-white"
+            style="background: rgb(46, 81, 149)"
+          >
+            <img src="/img/icons/trakxi-4.svg" alt="" class="w-6 mx-auto" />
+          </div>
+
+          <h3 class="text-2xl font-semibold mb-4">Share Trip</h3>
+
+          <p class="text-gray-500 leading-7">
+            Family members can follow your trip live for added safety.
+          </p>
+        </div>
+
+        <!-- HIGHLIGHT CARD -->
+        <div
+          class="rounded-[30px] p-7 text-white shadow-2xl hover:scale-105 duration-300"
+          style="background: rgb(46, 81, 149)"
+        >
+          <p class="uppercase tracking-[4px] text-sm mb-4 font-semibold">
+            Included
+          </p>
+
+          <h3 class="text-3xl font-bold mb-5">
+            All features in every booking.
+          </h3>
+
+          <p class="leading-7 text-white/80 mb-8">
+            No extra charges. Premium travel experience included automatically.
+          </p>
+          <a href="https://book.adtaxiandtravels.com/">
+            <button
+              class="bg-white text-black font-semibold px-6 py-3 rounded-full hover:scale-105 duration-300 cursor-pointer"
+            >
+              Book Ride →
+            </button>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!------------------------------------------ Traxxi-features Section End ------------------------------------------>
+
+    <!------------------------------------------ FAQ Section Start ------------------------------------------>
+
+    <section class="py-16 px-4 md:px-8" id="faq">
+      <div class="max-w-5xl mx-auto">
+        <!-- Heading -->
+        <div class="text-center mb-14">
+          <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold">
+            Frequently Asked Questions
+          </h2>
+
+          <p class="mt-4 text-gray-500 text-base sm:text-lg max-w-2xl mx-auto">
+            Everything you need to know about our taxi booking and travel
+            services.
+          </p>
+        </div>
+
+        <!-- FAQ Wrapper -->
+        <div class="space-y-5">
+          <!-- FAQ Item -->
+          <details
+            open
+            class="group bg-white rounded-3xl border border-gray-200 shadow-md overflow-hidden hover:shadow-2xl transition-all duration-300"
+          >
+            <summary
+              class="list-none cursor-pointer flex items-center justify-between gap-4 p-6 md:p-7"
+            >
+              <h3 class="text-lg md:text-xl font-semibold text-gray-900">
+                How do I book a taxi?
+              </h3>
+
+              <!-- Innovative Icon -->
+              <div
+                class="relative w-11 h-11 rounded-2xl bg-[rgb(46,81,149)] flex items-center justify-center shrink-0 overflow-hidden transition-all duration-300"
+              >
+                <!-- Horizontal Line -->
+                <span class="absolute w-5 h-[2px] bg-white rounded-full"></span>
+
+                <!-- Vertical Line -->
+                <span
+                  class="absolute h-5 w-[2px] bg-white rounded-full transition-all duration-300 group-open:rotate-90 group-open:opacity-0"
+                ></span>
+
+                <!-- Glow Effect -->
+                <div
+                  class="absolute inset-0 rounded-2xl bg-white/10 scale-0 group-hover:scale-125 transition-all duration-500"
+                ></div>
+              </div>
+            </summary>
+
+            <div
+              class="px-6 md:px-7 pb-6 md:pb-7 text-gray-600 leading-relaxed text-sm sm:text-base"
+            >
+              <p>
+                Open
+                <a href="https://book.adtaxiandtravels.com/"
+                  ><span class="font-semibold text-[rgb(46,81,149)]">
+                    book.adtaxiandtravels.com
+                  </span></a
+                >
+
+                and enter your trip details — you'll instantly see the fare and
+                confirm your booking in just a few taps.
+              </p>
+
+              <p class="mt-3">
+                Or call / WhatsApp
+                <span class="font-semibold text-[rgb(46,81,149)]">
+                  +91 63852 02400
+                </span>
+                anytime.
+              </p>
+            </div>
+          </details>
+
+          <!-- FAQ Item -->
+          <details
+            class="group bg-white rounded-3xl border border-gray-200 shadow-md overflow-hidden hover:shadow-2xl transition-all duration-300"
+          >
+            <summary
+              class="list-none cursor-pointer flex items-center justify-between gap-4 p-6 md:p-7"
+            >
+              <h3 class="text-lg md:text-xl font-semibold text-gray-900">
+                What payment methods do you accept?
+              </h3>
+
+              <!-- Innovative Icon -->
+              <div
+                class="relative w-11 h-11 rounded-2xl bg-[rgb(46,81,149)] flex items-center justify-center shrink-0 overflow-hidden transition-all duration-300"
+              >
+                <span class="absolute w-5 h-[2px] bg-white rounded-full"></span>
+
+                <span
+                  class="absolute h-5 w-[2px] bg-white rounded-full transition-all duration-300 group-open:rotate-90 group-open:opacity-0"
+                ></span>
+
+                <div
+                  class="absolute inset-0 rounded-2xl bg-white/10 scale-0 group-hover:scale-125 transition-all duration-500"
+                ></div>
+              </div>
+            </summary>
+
+            <div
+              class="px-6 md:px-7 pb-6 md:pb-7 text-gray-600 leading-relaxed text-sm sm:text-base"
+            >
+              We accept Cash, UPI, Credit Cards, Debit Cards, and all major
+              digital payment methods.
+            </div>
+          </details>
+
+          <!-- FAQ Item -->
+          <details
+            class="group bg-white rounded-3xl border border-gray-200 shadow-md overflow-hidden hover:shadow-2xl transition-all duration-300"
+          >
+            <summary
+              class="list-none cursor-pointer flex items-center justify-between gap-4 p-6 md:p-7"
+            >
+              <h3 class="text-lg md:text-xl font-semibold text-gray-900">
+                How do I see fares?
+              </h3>
+
+              <!-- Innovative Icon -->
+              <div
+                class="relative w-11 h-11 rounded-2xl bg-[rgb(46,81,149)] flex items-center justify-center shrink-0 overflow-hidden transition-all duration-300"
+              >
+                <span class="absolute w-5 h-[2px] bg-white rounded-full"></span>
+
+                <span
+                  class="absolute h-5 w-[2px] bg-white rounded-full transition-all duration-300 group-open:rotate-90 group-open:opacity-0"
+                ></span>
+
+                <div
+                  class="absolute inset-0 rounded-2xl bg-white/10 scale-0 group-hover:scale-125 transition-all duration-500"
+                ></div>
+              </div>
+            </summary>
+
+            <div
+              class="px-6 md:px-7 pb-6 md:pb-7 text-gray-600 leading-relaxed text-sm sm:text-base"
+            >
+              Enter your pickup and destination details to instantly get fare
+              estimates before confirming your ride.
+            </div>
+          </details>
+
+          <!-- FAQ Item -->
+          <details
+            class="group bg-white rounded-3xl border border-gray-200 shadow-md overflow-hidden hover:shadow-2xl transition-all duration-300"
+          >
+            <summary
+              class="list-none cursor-pointer flex items-center justify-between gap-4 p-6 md:p-7"
+            >
+              <h3 class="text-lg md:text-xl font-semibold text-gray-900">
+                Which areas do you serve?
+              </h3>
+
+              <!-- Innovative Icon -->
+              <div
+                class="relative w-11 h-11 rounded-2xl bg-[rgb(46,81,149)] flex items-center justify-center shrink-0 overflow-hidden transition-all duration-300"
+              >
+                <span class="absolute w-5 h-[2px] bg-white rounded-full"></span>
+
+                <span
+                  class="absolute h-5 w-[2px] bg-white rounded-full transition-all duration-300 group-open:rotate-90 group-open:opacity-0"
+                ></span>
+
+                <div
+                  class="absolute inset-0 rounded-2xl bg-white/10 scale-0 group-hover:scale-125 transition-all duration-500"
+                ></div>
+              </div>
+            </summary>
+
+            <div
+              class="px-6 md:px-7 pb-6 md:pb-7 text-gray-600 leading-relaxed text-sm sm:text-base"
+            >
+              We provide local city rides, airport transfers, and outstation
+              taxi services across nearby cities and towns.
+            </div>
+          </details>
+
+          <!-- FAQ Item -->
+          <details
+            class="group bg-white rounded-3xl border border-gray-200 shadow-md overflow-hidden hover:shadow-2xl transition-all duration-300"
+          >
+            <summary
+              class="list-none cursor-pointer flex items-center justify-between gap-4 p-6 md:p-7"
+            >
+              <h3 class="text-lg md:text-xl font-semibold text-gray-900">
+                Are your drivers verified?
+              </h3>
+
+              <!-- Innovative Icon -->
+              <div
+                class="relative w-11 h-11 rounded-2xl bg-[rgb(46,81,149)] flex items-center justify-center shrink-0 overflow-hidden transition-all duration-300"
+              >
+                <span class="absolute w-5 h-[2px] bg-white rounded-full"></span>
+
+                <span
+                  class="absolute h-5 w-[2px] bg-white rounded-full transition-all duration-300 group-open:rotate-90 group-open:opacity-0"
+                ></span>
+
+                <div
+                  class="absolute inset-0 rounded-2xl bg-white/10 scale-0 group-hover:scale-125 transition-all duration-500"
+                ></div>
+              </div>
+            </summary>
+
+            <div
+              class="px-6 md:px-7 pb-6 md:pb-7 text-gray-600 leading-relaxed text-sm sm:text-base"
+            >
+              Yes, all our drivers are professionally trained and background
+              verified for your safety and comfort.
+            </div>
+          </details>
+
+          <!-- FAQ Item -->
+          <details
+            class="group bg-white rounded-3xl border border-gray-200 shadow-md overflow-hidden hover:shadow-2xl transition-all duration-300"
+          >
+            <summary
+              class="list-none cursor-pointer flex items-center justify-between gap-4 p-6 md:p-7"
+            >
+              <h3 class="text-lg md:text-xl font-semibold text-gray-900">
+                What are your service hours?
+              </h3>
+
+              <!-- Innovative Icon -->
+              <div
+                class="relative w-11 h-11 rounded-2xl bg-[rgb(46,81,149)] flex items-center justify-center shrink-0 overflow-hidden transition-all duration-300"
+              >
+                <span class="absolute w-5 h-[2px] bg-white rounded-full"></span>
+
+                <span
+                  class="absolute h-5 w-[2px] bg-white rounded-full transition-all duration-300 group-open:rotate-90 group-open:opacity-0"
+                ></span>
+
+                <div
+                  class="absolute inset-0 rounded-2xl bg-white/10 scale-0 group-hover:scale-125 transition-all duration-500"
+                ></div>
+              </div>
+            </summary>
+
+            <div
+              class="px-6 md:px-7 pb-6 md:pb-7 text-gray-600 leading-relaxed text-sm sm:text-base"
+            >
+              Our taxi services are available 24/7 including weekends and
+              holidays.
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!------------------------------------------ FAQ Section End ------------------------------------------>
+
+    <!------------------------------------------ Footer Section Start ------------------------------------------>
+
+    <footer class="bg-[#f5f5f5] border-t border-gray-200" id="contact">
+      <p
+        class="mt-10 text-center text-slate-800 text-5xl font-semibold font-[Poppins]"
+      >
+        Contact Us
+      </p>
+
+      <div class="max-w-[1400px] mx-auto px-6 lg:px-12 py-14">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[2.5fr_1fr_1fr_1fr] gap-12 lg:gap-24"
+        >
+          <!-- LOGO -->
+
+          <div>
+            <div class="flex items-center gap-4">
+              <a href="#" class="flex items-center group">
+                <img
+                  src="/img/logo.webp"
+                  alt="Logo"
+                  class="h-20 w-auto object-contain transition-all duration-500 group-hover:scale-110 group-hover:rotate-6 group-hover:drop-shadow-[0_0_12px_rgba(43,157,144,0.6)]"
+                />
+              </a>
+
+              <h2 class="text-2xl font-semibold text-gray-900">
+                AD Taxi & Drop Taxi
+              </h2>
+            </div>
+
+            <p class="mt-6 text-gray-700 leading-8 text-[15px]">
+              Tamil Nadu-based taxi service offering local rides, one-way drops,
+              outstation packages and rentals across South India.
+            </p>
+
+            <p class="mt-6 text-gray-900 font-medium">Tamil Nadu, India</p>
+          </div>
+
+          <!-- EXPLORE -->
+
+          <div>
+            <h3
+              class="text-lg font-semibold text-gray-900 mb-6 uppercase tracking-wide"
+            >
+              Explore
+            </h3>
+
+            <ul class="space-y-4 text-gray-700">
+              <li>
+                <a href="#whyus" class="hover:text-black transition">Why Us</a>
+              </li>
+              <li>
+                <a href="#traxxi-features" class="hover:text-black transition"
+                  >Ride Features</a
+                >
+              </li>
+              <li>
+                <a href="#cabtypes" class="hover:text-black transition"
+                  >Cab Types</a
+                >
+              </li>
+              <li>
+                <a href="#faq" class="hover:text-black transition">FAQ</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- SERVICES -->
+
+          <div>
+            <h3
+              class="text-lg font-semibold text-gray-900 mb-6 uppercase tracking-wide"
+            >
+              Services
+            </h3>
+
+            <ul class="space-y-4 text-gray-700">
+              <li>
+                <a
+                  href="https://book.adtaxiandtravels.com/"
+                  class="hover:text-black transition"
+                  >Round Trip</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://book.adtaxiandtravels.com/"
+                  class="hover:text-black transition"
+                  >One Way Drop</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://book.adtaxiandtravels.com/"
+                  class="hover:text-black transition"
+                  >Outstation Package</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://book.adtaxiandtravels.com/"
+                  class="hover:text-black transition"
+                  >Local Package</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://book.adtaxiandtravels.com/"
+                  class="hover:text-black transition"
+                  >Local Rental</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- CONTACT -->
+
+          <div>
+            <h3
+              class="text-lg font-semibold text-gray-900 mb-6 uppercase tracking-wide"
+            >
+              Contact
+            </h3>
+
+            <div class="space-y-5 text-gray-700">
+              <div class="flex items-center gap-3">
+                <a
+                  href="tel:+916385202400"
+                  class="inline-flex items-center gap-2 hover:translate-x-2 transition duration-300"
+                >
+                  <img
+                    src="/img/icons/phone.svg"
+                    alt=""
+                    class="w-5 hover:scale-110 transition duration-300"
+                  />
+                  <span>+91 63852 02400</span>
+                </a>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <a
+                  href="https://api.whatsapp.com/send/?phone=916385202400&text&type=phone_number&app_absent=0"
+                  class="inline-flex items-center gap-2 hover:translate-x-2 transition duration-300"
+                  target="_blank"
+                >
+                  <img
+                    src="/img/icons/whatsapp.svg"
+                    alt=""
+                    class="w-5 hover:scale-110 transition duration-300"
+                  /><span>WhatsApp</span></a
+                >
+              </div>
+
+              <div class="flex items-center gap-3">
+                <a
+                  href="mailto:advikaada2526@gmail.com"
+                  class="inline-flex items-center gap-2 hover:translate-x-2 transition duration-300"
+                >
+                  <img
+                    src="/img/icons/mail.svg"
+                    alt=""
+                    class="w-5 hover:scale-110 transition duration-300"
+                  /><span>advikaada2526@gmail.com</span></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- BOTTOM -->
+
+        <div class="border-t border-gray-300 mt-14 pt-6">
+          <div
+            class="flex flex-col md:flex-row justify-between items-center md:items-start gap-4"
+          >
+            <div
+              class="flex flex-wrap items-center gap-6 text-gray-700 text-sm"
+            >
+              <p>© 2026 AD Taxi and Drop Taxi. All rights reserved.</p>
+
+              <a href="/privacy.html" class="hover:text-black transition">
+                Privacy Policy
+              </a>
+
+              <a href="/terms.html" class="hover:text-black transition">
+                Terms & Conditions
+              </a>
+            </div>
+
+            <div class="text-sm text-gray-700">
+              Powered By
+              <a href="https://trakxi.com/" target="_blank">
+                <span
+                  class="inline-block transition-all duration-500 ease-in-out hover:text-[rgb(0,136,12)] hover:font-semibold hover:tracking-wide hover:-translate-y-0.5"
+                >
+                  Trakxi
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!------------------------------------------ Footer Section End ------------------------------------------>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
